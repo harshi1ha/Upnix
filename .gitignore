@@ -62,3 +62,4 @@ Thumbs.db
 # Optional: ignore uploads (if your server stores files)
 # =========================
 uploads/
+desktop.ini
