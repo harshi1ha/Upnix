@@ -1,0 +1,153 @@
+/* 🔐 Login Page - Premium & Calm */
+
+/* 1. Page Background -> White */
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    /* Requested: White */
+    font-family: 'Inter', sans-serif;
+}
+
+/* 2. Login Card -> White with soft shadow */
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 24px;
+    /* Softer, more modern radius */
+    box-shadow: 0 20px 40px rgba(61, 49, 91, 0.06);
+    /* Soft, premium shadow */
+    text-align: center;
+}
+
+/* 3. App Name "Upnix" */
+.brand-title {
+    color: #3D315B;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.03em;
+}
+
+.brand-subtitle {
+    color: #64748B;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+
+/* Input Container */
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: left;
+}
+
+/* Icons -> #90BAAD */
+.input-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #90BAAD;
+    /* Teal */
+    pointer-events: none;
+    transition: color 0.2s;
+}
+
+/* Inputs */
+.login-input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    /* Space for icon */
+    border: 1.5px solid #E2E8F0;
+    /* Light grey active */
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #334155;
+    outline: none;
+    background: #F8FAFC;
+    /* Very subtle grey for contrast inside white card */
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    /* Fix sizing issues */
+}
+
+/* Input Focused -> #90BAAD */
+.login-input:focus {
+    border-color: #90BAAD;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(144, 186, 173, 0.1);
+}
+
+.login-input:focus+.input-icon {
+    color: #3D315B;
+    /* Darken icon on focus for nice effect */
+}
+
+/* Login Button -> #3D315B */
+.login-btn {
+    width: 100%;
+    background-color: #3D315B;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: transform 0.1s, opacity 0.2s;
+    margin-top: 1rem;
+}
+
+.login-btn:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+.login-btn:active {
+    transform: translateY(1px);
+}
+
+.login-btn:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+}
+
+/* Links */
+.register-link {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: #64748B;
+}
+
+.register-link a {
+    color: #90BAAD;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message */
+.error-msg {
+    background-color: #FEF2F2;
+    color: #EF4444;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
